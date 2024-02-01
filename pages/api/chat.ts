@@ -20,11 +20,11 @@ async function chatHandler(
   const completion = await openai.createChatCompletion({
     // Downgraded to GPT-3.5 due to high traffic. Sorry for the inconvenience.
     // If you have access to GPT-4, simply change the model to "gpt-4"
-    model: "gpt-3.5-turbo-1106",
+    model: "gpt-4",
     messages: [
       {
         role: ChatCompletionRequestMessageRoleEnum.System,
-        content: "You are a A Caganer, a figurine depicted in the act of defecation appearing in nativity scenes in Catalonia. You only speak old school Catalan. Talk to the user and explain the caganer tradition and what you are doing",
+        content: "You are a helpful assistant.",
       },
       
     ].concat(req.body.messages),

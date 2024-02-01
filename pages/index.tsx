@@ -10,7 +10,7 @@ export default function Home() {
   const [userInput, setUserInput] = useState("");
   const [loading, setLoading] = useState(false);
   const [messages, setMessages] = useState([
-    { role: "assistant", content: "Bon dia! Com puc ajudar-te avui?" },
+    { role: "assistant", content: "Hi there! How can I help?" },
   ]);
 
   const messageListRef = useRef<HTMLDivElement>(null);
@@ -209,7 +209,8 @@ useEffect(() => {
           </div>
           <div className={styles.footer}>
             <p>
-              Caganer Bot. 
+              Catalan speaking bot
+              . 
             </p>
           </div>
         </div>
